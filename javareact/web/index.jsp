@@ -1,14 +1,18 @@
+<%-- 
+    Document   : index
+    Created on : Apr 14, 2018, 4:28:29 PM
+    Author     : Cheryl
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
- test
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
     <body>
+        
         <div id="container"></div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
@@ -18,7 +22,16 @@
         <script type = "text/babel">
             var Greeting = React.createClass({
             render: function() {
-            return( <p> Hello World from Greeting 123 </p>)
+            return( 
+                <div>    
+                <p> Hello World from Greeting 123 </p>
+                    <form action='welcome' method='post'>
+                        Enter your name: 
+                        <input type="text" name="user" />
+                        <input type="submit" value="Submit" />                
+                    </form>
+                </div>
+                )
             }
             });
             ReactDOM.render(
