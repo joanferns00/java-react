@@ -1,6 +1,13 @@
 /javareact/nbproject/private/
 /javareact/build/
 
+# node.js
+#
+node_modules/
+npm-debug.log
+javareact/web/myReact/dist/
+package-lock.json
+
 # Compiled class file
 *.class
 

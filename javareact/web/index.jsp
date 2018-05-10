@@ -13,30 +13,7 @@
     </head>
     <body>
         
-        <div id="container"></div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-
-        <script type = "text/babel">
-            var Greeting = React.createClass({
-            render: function() {
-            return( 
-                <div>    
-                <p> Hello World from Greeting 123 </p>
-                    <form action='welcome' method='post'>
-                        Enter your name: 
-                        <input type="text" name="user" />
-                        <input type="submit" value="Submit" />                
-                    </form>
-                </div>
-                )
-            }
-            });
-            ReactDOM.render(
-            <Greeting/>  ,
-            document.getElementById('container'))
-        </script>
+    <div id="app"></div>
+  <script type="text/javascript" src="myReact/dist/app.bundle.js"></script></body>
     </body>
 </html>
